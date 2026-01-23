@@ -13,7 +13,7 @@ Simple React web application that displays "Hello!" and the current time. Built 
 
 Install dependencies:
 ```bash
-npm install
+npm installsad
 ```
 
 Start the development server:
