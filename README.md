@@ -7,7 +7,7 @@ Simple React web application that displays "Hello!" and the current time. Built 
 - Real-time clock that updates every second
 - Clean, modern UI
 - Built with React + Vite
-- Production-ready build configuration
+- Production-ready build configurationn
 
 ## Development
 
