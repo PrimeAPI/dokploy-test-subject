@@ -1,16 +1,48 @@
-# React + Vite
+# dokploy-test-subject
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Simple React web application that displays "Hello!" and the current time. Built with Vite for easy deployment with Dokploy.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Real-time clock that updates every second
+- Clean, modern UI
+- Built with React + Vite
+- Production-ready build configuration
 
-## React Compiler
+## Development
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Install dependencies:
+```bash
+npm install
+```
 
-## Expanding the ESLint configuration
+Start the development server:
+```bash
+npm run dev
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+The app will be available at `http://localhost:5173/`
+
+## Building for Production
+
+Build the application:
+```bash
+npm run build
+```
+
+Preview the production build:
+```bash
+npm run preview
+```
+
+The production build will be in the `dist/` directory, ready for deployment.
+
+## Deployment with Dokploy
+
+This repository is configured for easy deployment with Dokploy:
+
+1. **Build Command**: `npm install && npm run build`
+2. **Output Directory**: `dist`
+3. **Start Command**: `npm run preview` (or use a static file server)
+
+The app is a static site and can be deployed to any static hosting service or served with any web server.
